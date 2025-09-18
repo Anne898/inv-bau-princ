@@ -97,19 +97,19 @@
 
 
       <a href="https://maps.app.goo.gl/AtKci7c3BnpzyYew6"
-        class="u-border-none u-btn u-btn-round u-button-style u-custom-color-99 u-radius u-btn-2" target="_blank">
+        class="Colorbtn u-border-none u-btn u-btn-round u-button-style u-radius u-btn-2" target="_blank">
         <span class="u-file-icon u-icon u-text-white"><img src="images/1216895-b26c8bb7.png"
             alt=""></span>&nbsp;RECEPCIÓN
       </a>
 
 
       <a href="https://maps.app.goo.gl/kgpbqq1aecAS3NV59"
-        class="u-border-none u-btn u-btn-round u-button-style u-custom-color-99 u-radius u-btn-3" target="_blank">
+        class="Colorbtn u-border-none u-btn u-btn-round u-button-style u-radius u-btn-3" target="_blank">
         <span class="u-file-icon u-icon u-text-white"><img src="images/1216895-b26c8bb7.png" alt=""></span>&nbsp;MISA
       </a>
 
       <a href="https://api.whatsapp.com/send?phone=+524444901555&amp;amp;text=%C2%A1Hola%21+Muchas+gracias+por+la+invitaci%C3%B3n%2C+ah%C3%AD+estaremos%21%21+%F0%9F%A5%B3"
-        class="u-align-center-xs u-border-none u-btn u-btn-round u-button-style u-custom-color-99 u-radius u-btn-4">
+        class="Colorbtn u-align-center-xs u-border-none u-btn u-btn-round u-button-style u-radius u-btn-4">
         <span class="u-file-icon u-icon u-text-white"><img src="images/3781677-796374e8.png"
             alt=""></span>&nbsp;CONFIRMAR ASISTENCIA
       </a>
@@ -122,7 +122,7 @@
 
   <script>
     function updateCountdown() {
-      const endDate = new Date('2025-09-19T00:00:00'); // AAAA MM DD
+      const endDate = new Date('2025-10-04T00:00:00'); // AAAA MM DD
       const now = new Date();
       const timeDifference = endDate - now;
 
@@ -147,13 +147,11 @@
 
 
 <script>
-  // Configuración del confeti al cargar la página
-  window.onload = function () {
-    // Colores personalizados: morado, rosa y azul
-    const purplePinkColors = ['#3b8edb'];
-    const blueColor = ['#255f96'];
 
-    // Configurar confeti morado y rosa
+  window.onload = function () {
+    const purplePinkColors = ['#f8a7ce'];
+    const blueColor = ['#f8a7ce'];
+
     (function framePurplePink() {
       confetti({
         particleCount: 1,
@@ -162,7 +160,7 @@
         spread: 360,
         origin: {
           x: Math.random(),
-          y: 0 // Empezar desde la parte superior
+          y: 0 
         },
         colors: purplePinkColors,
         scalar: 1.5
@@ -170,10 +168,9 @@
 
       setTimeout(() => {
         requestAnimationFrame(framePurplePink);
-      }, 600); // Intervalo más largo para separar el confeti rosa y morado
+      }, 600); 
     }());
 
-    // Configurar confeti azul
     (function frameBlue() {
       confetti({
         particleCount: 1,
@@ -182,7 +179,7 @@
         spread: 360,
         origin: {
           x: Math.random(),
-          y: 0 // Empezar desde la parte superior
+          y: 0 
         },
         colors: blueColor,
         scalar: 1.5
@@ -221,9 +218,9 @@
     }
 
     .Colorbtn {
-      background-color: #ffffff;
+      background-color: #f8a7ce;
       color: #ffffff;
-      box-shadow: #ffffff;
+      box-shadow: #f8a7ce;
     }
 
     .Colorbtn:hover {
